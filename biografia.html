@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mio Portfolio | Home</title>
+    <title>Biografia | Chi Sono</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,34 +11,39 @@
     <header>
         <div class="header-content">
             <div class="profile-container">
-                <img src="C:\Users\cb695\OneDrive\Desktop\sito\sito\images\profilePhoto.png" class="profilePhoto" alt="Menu Profilo">
+                <img src="https://avatars.githubusercontent.com/u/182444782?v=4" class="profilePhoto" alt="Menu Profilo">
                 <div id="dropdownMenu" class="menu-content">
                     <a href="index.html">Home</a>
                     <a href="biografia.html">Biografia</a>
                     <a href="progetti.html">I miei Progetti</a>
-                    <a href="#contatti.html">Contatti</a>
+                    <a href="#contatti">Contatti</a>
                 </div>
             </div>
-            <h1>Benvenuti nel mio Sito</h1>
+            <h1>La Mia Storia</h1>
         </div>
     </header>
 
     <main class="container">
-        <section class="hero">
-            <h2>Sviluppatore Web in formazione</h2>
-            <p>Esplora il mio menu per scoprire chi sono e cosa sto realizzando.</p>
-        </section>
+        <article class="bio-card">
+            <h2>Chi sono</h2>
+            <p>In questa pagina scriverò la mia biografia dettagliata. Sono un appassionato di tecnologia e sto imparando a costruire il web un tag alla volta.</p>
+            <hr>
+            <h3>Competenze</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>Gestione Git & GitHub</li>
+                <li>Design Interattivo</li>
+            </ul>
+        </article>
     </main>
 
     <script>
         const photo = document.querySelector('.profilePhoto');
         const menu = document.getElementById('dropdownMenu');
-
         photo.addEventListener('click', (e) => {
             e.stopPropagation();
             menu.classList.toggle('show');
         });
-
         window.onclick = () => menu.classList.remove('show');
     </script>
 </body>
